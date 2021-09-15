@@ -22,7 +22,6 @@ refs.searchForm.addEventListener('submit', event => {
             sticker: false,
             });            
     } 
-    
     apiData.resetPage();
     event.currentTarget.reset();
     
@@ -37,6 +36,7 @@ refs.searchForm.addEventListener('submit', event => {
         event.stopPropagation();
         if (event.target === event.currentTarget) return;
 
+        
         
   
         const linkLargeImage = event.target.closest('li.photo-card').dataset
