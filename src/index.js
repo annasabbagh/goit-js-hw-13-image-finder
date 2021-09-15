@@ -22,6 +22,7 @@ refs.searchForm.addEventListener('submit', event => {
             sticker: false,
             });            
     } 
+    
     apiData.resetPage();
     event.currentTarget.reset();
     
