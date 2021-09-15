@@ -1,0 +1,27 @@
+{{#each this}}
+
+
+<li class="photo-card" data-largeimgurl={{largeImageURL}}>
+    <img class='photo-card__image' src="{{webformatURL}}" alt="photo image" />
+
+    <ul class="stats">
+        <li class="stats-item">
+            <i class="material-icons">thumb_up</i>
+            <span>{{likes}}</span>
+        </li>
+        <li class="stats-item">
+            <i class="material-icons">visibility</i>
+            <span>{{views}}</span>
+        </li>
+        <li class="stats-item">
+            <i class="material-icons">comment</i>
+            <span>{{comments}}</span>
+        </li>
+        <li class="stats-item">
+            <i class="material-icons">cloud_download</i>
+            <span>{{downloads}}</span>
+        </li>
+    </ul>
+</li>
+
+{{/each}}
